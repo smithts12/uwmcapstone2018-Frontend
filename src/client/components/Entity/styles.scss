@@ -1,0 +1,102 @@
+
+// General Entity Styles
+
+.entity {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    border: 5px solid #e2e2e2;
+    // background-color: rgba(255,255,255,0.25);
+    background-color: #3E5A66;
+    color: white;
+
+    .actionBar {
+        height: 40px;
+        background-color: #e2e2e2;
+        justify-content: space-between;
+        margin: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        button {
+            background: none;
+            border: none;
+            padding: 0 5px;
+            height:100%;
+            width: 34px;
+            svg {
+                color: #0D2846;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .overlay {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        background-color: #e2e2e2;
+        color: #0D2846;
+        p {
+            font-size: 20px;
+        }
+    }
+    
+    form {
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+        label {
+            float: right;
+            font-weight: 400;
+            letter-spacing: 0.7px;
+            color: #e2e2e2;
+            padding-top: 7px;
+            white-space: nowrap;
+        }
+        textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, button:focus, button:active, button:hover, select:focus, select:active, select:hover, label:focus, .btn:active, .btn.active {
+            box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+        }
+        input, textarea, select {
+            font-weight: 450;
+            color: #0D2846;
+            background-color: #66808c !important;
+            border: none;
+            &:not(.disabled) {
+                background-color: #8ba4af !important;
+            }
+        }
+        .form-control {
+            border: none !important;
+            &.is-invalid {
+                background-color: #c48b9d !important;
+            }
+        }
+        ::placeholder {
+            font-weight: 350;
+            color: #0D2846;
+            opacity: 0.6;
+        }
+        textarea {
+            resize: none;
+            overflow-y: hidden;
+            width: 100%;
+        }
+    }
+}
+
+.createButton {
+    width: 100%;
+    font-size: 18px !important;
+    font-weight: 450 !important;
+    background-color: #e2e2e2 !important;
+    color: #0D2846 !important;
+}

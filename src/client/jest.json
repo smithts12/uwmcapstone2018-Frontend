@@ -1,0 +1,30 @@
+{
+    "testEnvironment": "jsdom",
+    "name": "client-test",
+    "rootDir": "../../",
+    "testURL": "http://localhost/",
+    "setupTestFrameworkScriptFile": "<rootDir>/jestSetup/enzyme.js",
+    "coveragePathIgnorePatterns": [
+        "/node_modules/",
+        "/jestSetup/"
+    ],
+    "collectCoverageFrom": [
+        "<rootDir>/src/client/**/*.{js,jsx}",
+        "!<rootDir>/src/client/app.jsx",
+        "!<rootDir>/src/client/store.js",
+        "!<rootDir>/src/client/routes.js"
+    ],
+    "testResultsProcessor": "<rootDir>/node_modules/jest-junit",
+    "testMatch": [
+        "**/client/**/*.test.*",
+        "**/client/**/*.spec.*"
+    ],
+    "moduleNameMapper": {
+        "\\.(s?css|less)$": "<rootDir>/jestSetup/ignoreFileType.js",
+        "\\.(gif|tff|eot|svg)$": "<rootDir>/jestSetup/fileMock.js"
+    },
+    "moduleFileExtensions": [
+        "js",
+        "jsx"
+    ]
+}

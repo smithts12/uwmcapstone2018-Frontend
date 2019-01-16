@@ -1,0 +1,35 @@
+before_script:
+  - docker info
+
+image: registry.uwm-nm-te-capstone.com:8083/node-docker:latest
+
+stages:
+  - Test
+  - Build
+
+cache:
+  paths:
+  - node_modules/
+
+Lint:
+  stage: Test
+  script:
+  - npm install
+  - npm run lint
+
+Test:
+  stage: Test
+  script:
+  - npm install
+  - npm test
+
+Build:
+  stage: Build
+  script:
+    - docker login -u $DOCKER_REPO_USER -p $DOCKER_REPO_PASS registry.uwm-nm-te-capstone.com:8083
+    - docker build -t registry.uwm-nm-te-capstone.com:8083/$CI_PROJECT_NAME:$CI_COMMIT_SHA -t registry.uwm-nm-te-capstone.com:8083/$CI_PROJECT_NAME:latest .
+    - docker push registry.uwm-nm-te-capstone.com:8083/$CI_PROJECT_NAME:$CI_COMMIT_SHA
+    - docker push registry.uwm-nm-te-capstone.com:8083/$CI_PROJECT_NAME:latest
+  only:
+    - master
+  when: on_success

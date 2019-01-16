@@ -1,0 +1,10 @@
+{
+    "serviceUrl": "http://localhost:8333/backend",
+    "serviceHost": "http://localhost:8333",
+    "serviceUri": "/backend",
+    "httpListenerPort": 4000,
+    "httpsListenerPort": 8443,
+    "allowCORS": true,
+    "useMock": false,
+    "seed": 196036
+}

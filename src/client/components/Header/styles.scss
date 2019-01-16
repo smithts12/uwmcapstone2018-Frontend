@@ -1,0 +1,16 @@
+header {
+  display: flex !important;
+  align-items: center;
+  padding: 10px;
+  height: 120px;
+  z-index: 1;
+  h1 {
+    pointer-events: none;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+  }
+  * {
+    z-index: 2;
+  }
+}

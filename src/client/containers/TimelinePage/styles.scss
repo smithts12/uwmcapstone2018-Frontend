@@ -1,0 +1,133 @@
+#TIMELINE_PAGE {
+  .emptyTimeline {
+    text-align: center;
+    font-size: 32pt;
+    color: #b5d3e0;
+    font-weight: 500;
+    p {
+      font-size: 0.6em;
+      padding-top: 1em;
+    }
+  }
+  .rt-controls {
+    background-color: transparent;
+    padding-left: 65px;
+    .rt-controls__content {
+      .rt-controls__button--zoom-in {
+        background: url('../../images/zoom-in.png');
+        background-position: center;
+        border-radius: 10px;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        margin-right: 15px;
+        svg {
+          display: none;
+        }
+        &:active, &:focus {
+          outline:none;
+        }
+      }
+      .rt-controls__button--zoom-out {
+        background: url('../../images/zoom-out.png');
+        background-position: center;
+        border-radius: 10px;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        svg {
+          display: none;
+        }
+        &:active, &:focus {
+          outline:none;
+        }
+      }
+    }
+  }
+  .rt-timebar {
+    background-color: #66808c;
+    .rt-timebar__row {
+      border: none;
+      background-color: #66808c;
+      .rt-timebar__cell {
+        background-color: #0D2846;
+        color: white;
+        border-left: 2px solid #66808c;
+        &:nth-child(1) {
+          border-left: none;
+        }
+      }
+    }
+  }
+  .rt-marker {
+    display: none;
+  }
+  .rt-tracks {
+    .tr-track {
+      background-color: #66808c; 
+    }
+    .rt-track__elements {
+      height: 50px;
+      border-bottom: 1px solid #76919e;
+      .rt-track__element {
+        height: 48px;
+        top: 5px;
+        .rt-element {
+          color: white;
+        }
+      }
+    }
+  }
+  .rt-layout {
+    margin-top: -30px;
+  }
+  .rt-layout__side {
+    width: 200px;
+    .rt-sidebar {
+      background-color: transparent;
+      .rt-sidebar__header {
+        background-color: transparent;
+      }
+      .rt-timebar-key {
+        border: none;
+      }
+      .rt-track-keys {
+        border-left: 1px solid #76919e;
+        border-top: 1px solid #76919e;
+        .rt-track-key__toggle {
+          display: none;
+        }
+        .rt-track-key__entry {
+          text-align: center;
+          padding-left: 0;
+          background-color: #0D2846;
+          color: white;
+          height: 50px;
+          border-bottom: 1px solid #76919e
+        }
+      }
+    }
+  }
+}
+
+.rt-element__tooltip {
+  display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

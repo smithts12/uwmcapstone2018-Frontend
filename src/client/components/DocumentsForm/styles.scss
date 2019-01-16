@@ -1,0 +1,44 @@
+.uploadForm {
+  width: 100%;
+  padding-left: 25%;
+  padding-top: 3%;
+  .uploadFormGroup {
+    align-content: center;
+    align-items: center;
+    .list-group-item {
+      background-color: #66808c;
+      border: 5px solid #0D2846;
+      border-radius: 10px;
+    }
+    .submitDownloadButton {
+      font-size: 18px;
+      font-weight: 450;
+      background-color: #e2e2e2;
+      color: #0D2846;
+    }
+    .itemCol {
+      min-width: 80%;
+      background-color: #66808c;
+    }
+    .documentUpload {
+      padding-bottom: 2.5%;
+      color: white;
+      font-size: 14pt;
+    }
+    .documentListLabel {
+      font-size: 24pt;
+      font-weight: bold;
+      color: white;
+    }
+    .uploadLabel {
+      font-size: 24pt;
+      font-weight: bold;
+      color: white;
+    }
+    .documentList {
+      padding-top: 5%;
+      min-width: 500px;
+      max-width: 750px;
+    }
+  }
+}

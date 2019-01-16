@@ -1,0 +1,72 @@
+{
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "ecmaVersion": 2017,
+        "sourceType": "module"
+    },
+    "globals": {
+        "workbox": false,
+        "CONFIG": true
+    },
+    "env": {
+        "node": true,
+        "es6": true,
+        "browser": true,
+        "mocha": true,
+        "jest": true
+    },
+    "plugins": [
+        "react"
+    ],
+    "extends": [
+        "standard",
+        "plugin:react/recommended"
+    ],
+    "settings": {
+        "react": {
+            "version": "16.6.0"
+        }
+    },
+    "rules": {
+        "camelcase": 0,
+        "no-console": "off",
+        "no-return-assign": "off",
+        "semi": [
+            "error",
+            "always"
+        ],
+        "semi-spacing": [
+            "warn",
+            {
+                "before": false,
+                "after": false
+            }
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "handle-callback-err": "warn",
+        "react/prop-types": "off",
+        "react/no-find-dom-node": "off",
+        "react/no-string-refs": "off",
+        "react/display-name": "off",
+        "space-before-function-paren": [
+            "error",
+            {
+                "anonymous": "always",
+                "named": "never"
+            }
+        ],
+        "comma-dangle": [
+            "error",
+            "only-multiline"
+        ]
+    }
+}

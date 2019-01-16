@@ -1,0 +1,17 @@
+.entity.profile {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    .overlay {
+        margin-top: -10px;
+        margin-left: -15px;
+    }
+}
+
+.profile-buttons {
+    * {
+        margin: 0 auto;
+        .save {
+            margin-right: 30px;
+        }
+    }
+}

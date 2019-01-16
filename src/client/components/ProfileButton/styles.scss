@@ -1,0 +1,30 @@
+#profile-dropdown {
+  z-index: 2;
+  position: absolute;
+  right: 2rem;
+  top: 1.2rem;
+  &:active, &:hover {
+    outline: none;
+    color: #c5c5c5;
+    color: transparent;
+    background-color: transparent;
+  }
+  .toggle {
+    outline: none;
+    color: white;
+    background-color: transparent;
+    font-size: 36pt;
+  }
+  .toggle:hover {
+    outline: none;
+    color: #c5c5c5;
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .toggle:active {
+    outline: none;
+    color: #c5c5c5;
+    color: transparent;
+    background-color: transparent;
+  }
+}
